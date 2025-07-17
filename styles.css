@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#calculator_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 530px;
+    background-color: grey;
+    gap: 1em;
+    border-radius: 5%;
+    flex: 0 0 auto;
+}
+
+.rowOne,
+.rows {
+    display: flex;
+    width: 80%;
+}
+
+.rowOne {
+    justify-content: flex-end;
+}
+
+.rows {
+    justify-content: space-between;
+}
+
+.rowOne > button,
+.rows > button {
+    padding: 2px;
+    width: 4rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+button.clear {
+    margin-right: 9px;
+    background-color: red;
+    font-size: 18px;
+}
+
+button.clear:hover {
+    background-color: #ffbb33;
+}
+
+button.add,
+button.subtract,
+button.multiply,
+button.divide {
+    background-color: #f0a500;
+}
+
+button.add:hover,
+button.subtract:hover,
+button.multiply:hover,
+button.divide:hover {
+    background-color: #ffbb33;
+}
+
+button.delete {
+    background-color: brown;
+    font-size: 18px;
+}
+
+button.delete:hover {
+    background-color: #ffbb33;
+}
+
+button {
+    font-size: 20px;
+}
+
+button.\30:hover,
+button.\31:hover,
+button.\32:hover,
+button.\33:hover,
+button.\34:hover,
+button.\35:hover,
+button.\36:hover,
+button.\37:hover,
+button.\38:hover,
+button.\39:hover,
+button.equals:hover,
+button.period:hover {
+    background-color: rgb(125, 124, 124);
+}
+
+#display {
+    width: 90%;
+    height: 80px;
+    background-color: white;
+    border-radius: 5%;
+    display: flex;
+    font-size: 48px;
+    align-items: end;
+    justify-content: end;
+    padding: 5px;
+}
