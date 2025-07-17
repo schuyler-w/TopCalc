@@ -5,7 +5,6 @@ let operator = '';
 let leftOperand = '';
 let rightOperand = '';
 let displayingTotal = false;
-let operatorButtonPressed = false;
 
 // button assignments
 const numBtns = document.querySelectorAll(".numbtn");
