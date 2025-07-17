@@ -72,21 +72,13 @@ numBtns.forEach((btn) => {
 
 function handleOperator(op) {
     if (!displayingTotal && content !== '') {
-        if (leftOperand && operator) {
-            rightOperand = content;
-            let result = operate(leftOperand, rightOperand, operator);
-            display.textContent = result;
-            leftOperand = result;
-        } else {
-            leftOperand = content;
-        }
+        leftOperand = content;
     }
 
     operator = op;
     content = '';
     displayingTotal = false;
 }
-
 
 btnadd.addEventListener("click", () => handleOperator("+"));
 btnsub.addEventListener("click", () => handleOperator("-"));
